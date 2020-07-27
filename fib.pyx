@@ -1,6 +1,8 @@
 import numpy as np
 cimport numpy as np
 
+#test
+
 
 def fib(int n):
     """Print the first n Fibonacci numbers."""

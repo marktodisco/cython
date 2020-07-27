@@ -1725,7 +1725,7 @@ static PyObject *__pyx_tuple__8;
 static PyObject *__pyx_codeobj__9;
 /* Late includes */
 
-/* "fib.pyx":5
+/* "fib.pyx":7
  * 
  * 
  * def fib(int n):             # <<<<<<<<<<<<<<
@@ -1743,7 +1743,7 @@ static PyObject *__pyx_pw_3fib_1fib(PyObject *__pyx_self, PyObject *__pyx_arg_n)
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("fib (wrapper)", 0);
   assert(__pyx_arg_n); {
-    __pyx_v_n = __Pyx_PyInt_As_int(__pyx_arg_n); if (unlikely((__pyx_v_n == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 5, __pyx_L3_error)
+    __pyx_v_n = __Pyx_PyInt_As_int(__pyx_arg_n); if (unlikely((__pyx_v_n == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 7, __pyx_L3_error)
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L3_error:;
@@ -1785,7 +1785,7 @@ static PyObject *__pyx_pf_3fib_fib(CYTHON_UNUSED PyObject *__pyx_self, int __pyx
   __pyx_pybuffernd_result.data = NULL;
   __pyx_pybuffernd_result.rcbuffer = &__pyx_pybuffer_result;
 
-  /* "fib.pyx":8
+  /* "fib.pyx":10
  *     """Print the first n Fibonacci numbers."""
  * 
  *     cdef int a = 0             # <<<<<<<<<<<<<<
@@ -1794,7 +1794,7 @@ static PyObject *__pyx_pf_3fib_fib(CYTHON_UNUSED PyObject *__pyx_self, int __pyx
  */
   __pyx_v_a = 0;
 
-  /* "fib.pyx":9
+  /* "fib.pyx":11
  * 
  *     cdef int a = 0
  *     cdef int b = 1             # <<<<<<<<<<<<<<
@@ -1803,7 +1803,7 @@ static PyObject *__pyx_pf_3fib_fib(CYTHON_UNUSED PyObject *__pyx_self, int __pyx
  */
   __pyx_v_b = 1;
 
-  /* "fib.pyx":10
+  /* "fib.pyx":12
  *     cdef int a = 0
  *     cdef int b = 1
  *     cdef int i = 1             # <<<<<<<<<<<<<<
@@ -1812,51 +1812,51 @@ static PyObject *__pyx_pf_3fib_fib(CYTHON_UNUSED PyObject *__pyx_self, int __pyx
  */
   __pyx_v_i = 1;
 
-  /* "fib.pyx":11
+  /* "fib.pyx":13
  *     cdef int b = 1
  *     cdef int i = 1
  *     cdef np.ndarray[np.int64_t, ndim=1] result = np.zeros((n,), dtype=np.int64)             # <<<<<<<<<<<<<<
  * 
  *     # Edge case
  */
-  __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_np); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 11, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_np); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 13, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_zeros); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 11, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_zeros); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 13, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  __pyx_t_1 = __Pyx_PyInt_From_int(__pyx_v_n); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 11, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyInt_From_int(__pyx_v_n); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 13, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_3 = PyTuple_New(1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 11, __pyx_L1_error)
+  __pyx_t_3 = PyTuple_New(1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 13, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_GIVEREF(__pyx_t_1);
   PyTuple_SET_ITEM(__pyx_t_3, 0, __pyx_t_1);
   __pyx_t_1 = 0;
-  __pyx_t_1 = PyTuple_New(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 11, __pyx_L1_error)
+  __pyx_t_1 = PyTuple_New(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 13, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_GIVEREF(__pyx_t_3);
   PyTuple_SET_ITEM(__pyx_t_1, 0, __pyx_t_3);
   __pyx_t_3 = 0;
-  __pyx_t_3 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 11, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 13, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
-  __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_np); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 11, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_np); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 13, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
-  __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_t_4, __pyx_n_s_int64); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 11, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_t_4, __pyx_n_s_int64); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 13, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-  if (PyDict_SetItem(__pyx_t_3, __pyx_n_s_dtype, __pyx_t_5) < 0) __PYX_ERR(0, 11, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_3, __pyx_n_s_dtype, __pyx_t_5) < 0) __PYX_ERR(0, 13, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-  __pyx_t_5 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_t_1, __pyx_t_3); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 11, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_t_1, __pyx_t_3); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 13, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-  if (!(likely(((__pyx_t_5) == Py_None) || likely(__Pyx_TypeTest(__pyx_t_5, __pyx_ptype_5numpy_ndarray))))) __PYX_ERR(0, 11, __pyx_L1_error)
+  if (!(likely(((__pyx_t_5) == Py_None) || likely(__Pyx_TypeTest(__pyx_t_5, __pyx_ptype_5numpy_ndarray))))) __PYX_ERR(0, 13, __pyx_L1_error)
   __pyx_t_6 = ((PyArrayObject *)__pyx_t_5);
   {
     __Pyx_BufFmt_StackElem __pyx_stack[1];
     if (unlikely(__Pyx_GetBufferAndValidate(&__pyx_pybuffernd_result.rcbuffer->pybuffer, (PyObject*)__pyx_t_6, &__Pyx_TypeInfo_nn___pyx_t_5numpy_int64_t, PyBUF_FORMAT| PyBUF_STRIDES| PyBUF_WRITABLE, 1, 0, __pyx_stack) == -1)) {
       __pyx_v_result = ((PyArrayObject *)Py_None); __Pyx_INCREF(Py_None); __pyx_pybuffernd_result.rcbuffer->pybuffer.buf = NULL;
-      __PYX_ERR(0, 11, __pyx_L1_error)
+      __PYX_ERR(0, 13, __pyx_L1_error)
     } else {__pyx_pybuffernd_result.diminfo[0].strides = __pyx_pybuffernd_result.rcbuffer->pybuffer.strides[0]; __pyx_pybuffernd_result.diminfo[0].shape = __pyx_pybuffernd_result.rcbuffer->pybuffer.shape[0];
     }
   }
@@ -1864,7 +1864,7 @@ static PyObject *__pyx_pf_3fib_fib(CYTHON_UNUSED PyObject *__pyx_self, int __pyx
   __pyx_v_result = ((PyArrayObject *)__pyx_t_5);
   __pyx_t_5 = 0;
 
-  /* "fib.pyx":14
+  /* "fib.pyx":16
  * 
  *     # Edge case
  *     result[0] = a             # <<<<<<<<<<<<<<
@@ -1879,11 +1879,11 @@ static PyObject *__pyx_pf_3fib_fib(CYTHON_UNUSED PyObject *__pyx_self, int __pyx
   } else if (unlikely(__pyx_t_7 >= __pyx_pybuffernd_result.diminfo[0].shape)) __pyx_t_8 = 0;
   if (unlikely(__pyx_t_8 != -1)) {
     __Pyx_RaiseBufferIndexError(__pyx_t_8);
-    __PYX_ERR(0, 14, __pyx_L1_error)
+    __PYX_ERR(0, 16, __pyx_L1_error)
   }
   *__Pyx_BufPtrStrided1d(__pyx_t_5numpy_int64_t *, __pyx_pybuffernd_result.rcbuffer->pybuffer.buf, __pyx_t_7, __pyx_pybuffernd_result.diminfo[0].strides) = __pyx_v_a;
 
-  /* "fib.pyx":15
+  /* "fib.pyx":17
  *     # Edge case
  *     result[0] = a
  *     result[1] = b             # <<<<<<<<<<<<<<
@@ -1898,11 +1898,11 @@ static PyObject *__pyx_pf_3fib_fib(CYTHON_UNUSED PyObject *__pyx_self, int __pyx
   } else if (unlikely(__pyx_t_9 >= __pyx_pybuffernd_result.diminfo[0].shape)) __pyx_t_8 = 0;
   if (unlikely(__pyx_t_8 != -1)) {
     __Pyx_RaiseBufferIndexError(__pyx_t_8);
-    __PYX_ERR(0, 15, __pyx_L1_error)
+    __PYX_ERR(0, 17, __pyx_L1_error)
   }
   *__Pyx_BufPtrStrided1d(__pyx_t_5numpy_int64_t *, __pyx_pybuffernd_result.rcbuffer->pybuffer.buf, __pyx_t_9, __pyx_pybuffernd_result.diminfo[0].strides) = __pyx_v_b;
 
-  /* "fib.pyx":16
+  /* "fib.pyx":18
  *     result[0] = a
  *     result[1] = b
  *     a, b = b, a + b             # <<<<<<<<<<<<<<
@@ -1914,7 +1914,7 @@ static PyObject *__pyx_pf_3fib_fib(CYTHON_UNUSED PyObject *__pyx_self, int __pyx
   __pyx_v_a = __pyx_t_8;
   __pyx_v_b = __pyx_t_10;
 
-  /* "fib.pyx":19
+  /* "fib.pyx":21
  * 
  *     # Main body
  *     while i < n:             # <<<<<<<<<<<<<<
@@ -1925,7 +1925,7 @@ static PyObject *__pyx_pf_3fib_fib(CYTHON_UNUSED PyObject *__pyx_self, int __pyx
     __pyx_t_11 = ((__pyx_v_i < __pyx_v_n) != 0);
     if (!__pyx_t_11) break;
 
-    /* "fib.pyx":20
+    /* "fib.pyx":22
  *     # Main body
  *     while i < n:
  *         result[i] = a             # <<<<<<<<<<<<<<
@@ -1940,11 +1940,11 @@ static PyObject *__pyx_pf_3fib_fib(CYTHON_UNUSED PyObject *__pyx_self, int __pyx
     } else if (unlikely(__pyx_t_12 >= __pyx_pybuffernd_result.diminfo[0].shape)) __pyx_t_10 = 0;
     if (unlikely(__pyx_t_10 != -1)) {
       __Pyx_RaiseBufferIndexError(__pyx_t_10);
-      __PYX_ERR(0, 20, __pyx_L1_error)
+      __PYX_ERR(0, 22, __pyx_L1_error)
     }
     *__Pyx_BufPtrStrided1d(__pyx_t_5numpy_int64_t *, __pyx_pybuffernd_result.rcbuffer->pybuffer.buf, __pyx_t_12, __pyx_pybuffernd_result.diminfo[0].strides) = __pyx_v_a;
 
-    /* "fib.pyx":21
+    /* "fib.pyx":23
  *     while i < n:
  *         result[i] = a
  *         a, b = b, a + b             # <<<<<<<<<<<<<<
@@ -1956,7 +1956,7 @@ static PyObject *__pyx_pf_3fib_fib(CYTHON_UNUSED PyObject *__pyx_self, int __pyx
     __pyx_v_a = __pyx_t_10;
     __pyx_v_b = __pyx_t_8;
 
-    /* "fib.pyx":22
+    /* "fib.pyx":24
  *         result[i] = a
  *         a, b = b, a + b
  *         i += 1             # <<<<<<<<<<<<<<
@@ -1966,7 +1966,7 @@ static PyObject *__pyx_pf_3fib_fib(CYTHON_UNUSED PyObject *__pyx_self, int __pyx
     __pyx_v_i = (__pyx_v_i + 1);
   }
 
-  /* "fib.pyx":24
+  /* "fib.pyx":26
  *         i += 1
  * 
  *     return result             # <<<<<<<<<<<<<<
@@ -1976,7 +1976,7 @@ static PyObject *__pyx_pf_3fib_fib(CYTHON_UNUSED PyObject *__pyx_self, int __pyx
   __pyx_r = ((PyObject *)__pyx_v_result);
   goto __pyx_L0;
 
-  /* "fib.pyx":5
+  /* "fib.pyx":7
  * 
  * 
  * def fib(int n):             # <<<<<<<<<<<<<<
@@ -4595,17 +4595,17 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GOTREF(__pyx_tuple__7);
   __Pyx_GIVEREF(__pyx_tuple__7);
 
-  /* "fib.pyx":5
+  /* "fib.pyx":7
  * 
  * 
  * def fib(int n):             # <<<<<<<<<<<<<<
  *     """Print the first n Fibonacci numbers."""
  * 
  */
-  __pyx_tuple__8 = PyTuple_Pack(6, __pyx_n_s_n, __pyx_n_s_n, __pyx_n_s_a, __pyx_n_s_b, __pyx_n_s_i, __pyx_n_s_result); if (unlikely(!__pyx_tuple__8)) __PYX_ERR(0, 5, __pyx_L1_error)
+  __pyx_tuple__8 = PyTuple_Pack(6, __pyx_n_s_n, __pyx_n_s_n, __pyx_n_s_a, __pyx_n_s_b, __pyx_n_s_i, __pyx_n_s_result); if (unlikely(!__pyx_tuple__8)) __PYX_ERR(0, 7, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__8);
   __Pyx_GIVEREF(__pyx_tuple__8);
-  __pyx_codeobj__9 = (PyObject*)__Pyx_PyCode_New(1, 0, 6, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__8, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_fib_pyx, __pyx_n_s_fib, 5, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__9)) __PYX_ERR(0, 5, __pyx_L1_error)
+  __pyx_codeobj__9 = (PyObject*)__Pyx_PyCode_New(1, 0, 6, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__8, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_fib_pyx, __pyx_n_s_fib, 7, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__9)) __PYX_ERR(0, 7, __pyx_L1_error)
   __Pyx_RefNannyFinishContext();
   return 0;
   __pyx_L1_error:;
@@ -4920,16 +4920,16 @@ if (!__Pyx_RefNanny) {
   if (PyDict_SetItem(__pyx_d, __pyx_n_s_np, __pyx_t_1) < 0) __PYX_ERR(0, 1, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "fib.pyx":5
+  /* "fib.pyx":7
  * 
  * 
  * def fib(int n):             # <<<<<<<<<<<<<<
  *     """Print the first n Fibonacci numbers."""
  * 
  */
-  __pyx_t_1 = PyCFunction_NewEx(&__pyx_mdef_3fib_1fib, NULL, __pyx_n_s_fib); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 5, __pyx_L1_error)
+  __pyx_t_1 = PyCFunction_NewEx(&__pyx_mdef_3fib_1fib, NULL, __pyx_n_s_fib); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 7, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  if (PyDict_SetItem(__pyx_d, __pyx_n_s_fib, __pyx_t_1) < 0) __PYX_ERR(0, 5, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_d, __pyx_n_s_fib, __pyx_t_1) < 0) __PYX_ERR(0, 7, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "fib.pyx":1
